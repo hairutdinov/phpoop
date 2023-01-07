@@ -10,3 +10,5 @@ INSTALL DEPENDENCIES
 ```bash
 docker-compose exec php composer install
 ```
+URL:
+```http://0.0.0.0:8009/```
