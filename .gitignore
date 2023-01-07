@@ -1,0 +1,67 @@
+# yii console commands
+/yii
+/yii_test
+/yii_test.bat
+
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+composer.lock
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+# vagrant runtime
+/.vagrant
+
+# ignore generated files
+/frontend/web/index.php
+/frontend/web/index-test.php
+/frontend/web/robots.txt
+/backend/web/index.php
+/backend/web/index-test.php
+/backend/web/robots.txt
+/frontend/web/log.txt
+/frontend/web/upload/qrcode
+/runtime
+
+private_files/*
+!private_files/results_kt
+!private_files/results_inspection
+private_files/results_kt/*
+private_files/results_inspection/*
+!private_files/results_kt/Trinity.jpg
+!private_files/results_inspection/Neo.jpg
+
+# container logs
+docker/nginx/logs/*
+docker/db/data/*
+
+# sql files
+console/helpers/migrations/ImportTablesSqlQueries
+console/helpers/migrations/ImportTablesSqlQueriesWithoutTruncate
+docker/db/init/init.sql
+
+# pass
+.env

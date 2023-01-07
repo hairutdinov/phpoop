@@ -1,0 +1,20 @@
+services:
+#  composer:
+#    image: composer:2.5
+  php:
+    build:
+      args:
+        user: bulat
+        uid: 501
+      context: .
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8009:80"
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+      - ./:/var/www/html
+

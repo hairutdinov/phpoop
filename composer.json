@@ -1,0 +1,21 @@
+{
+    "name": "bulat/learning_composer",
+    "description": "I'm learning how to use composer",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bulat"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^2.64"
+    },
+    "autoload": {
+        "classmap": ["classes/", "library/"],
+        "files": ["config/db.php"],
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
